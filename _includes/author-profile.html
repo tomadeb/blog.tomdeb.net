@@ -17,7 +17,7 @@
 
   <div class="author__content">
     {% if author.home %}
-      <a class="p-author" rel="me" href="{{ author.home }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
+      <a class="p-author u-url" rel="me" href="{{ author.home }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
     {% else %}
       <h3 class="p-author author__name" itemprop="name">{{ author.name }}</h3>
     {% endif %}
