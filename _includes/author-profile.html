@@ -1,7 +1,7 @@
 {% assign author = page.author | default: page.authors[0] | default: site.author %}
 {% assign author = site.data.authors[author] | default: author %}
 
-<div itemscope itemtype="https://schema.org/Person">
+<div class="h-card" itemscope itemtype="https://schema.org/Person">
 
   {% if author.avatar %}
     <div class="author__avatar">
@@ -17,12 +17,12 @@
 
   <div class="author__content">
     {% if author.home %}
-      <a href="{{ author_link }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
+      <a class="p-author" rel="me" href="{{ author.home }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
     {% else %}
-      <h3 class="p-author h-card author__name" itemprop="name">{{ author.name }}</h3>
+      <h3 class="p-author author__name" itemprop="name">{{ author.name }}</h3>
     {% endif %}
     {% if author.bio %}
-      <div class="p-note h-card author__bio" itemprop="description">
+      <div class="p-note author__bio" itemprop="description">
         {{ author.bio | markdownify }}
       </div>
     {% endif %}
