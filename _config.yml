@@ -94,10 +94,11 @@ analytics:
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.webp"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
+  home             : "https://blog.tomdeb.net"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
